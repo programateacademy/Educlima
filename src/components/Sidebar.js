@@ -41,7 +41,7 @@ const Sidebar = () => {
         </li>
       </ul>
       <div className="footer-container">
-        <span>2023 © Educamas.</span>
+        <span>2023 © Educamas. | Versión 1.0</span>
       </div>
     </div>
   );
