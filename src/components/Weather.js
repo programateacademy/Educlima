@@ -55,6 +55,10 @@ const Weather = () => {
             <div className="card-container">
               {weatherData.list.map((item) => (
                 <div className="card" key={item.dt}>
+                  <img className="card-img"
+                    src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}
+                    alt={item.weather[0].description}
+                  />
                   <p className="card-temp">
                     {convertKelvinToCelsius(item.main.temp)
                       .toFixed(0)
