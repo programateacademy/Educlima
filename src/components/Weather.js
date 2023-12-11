@@ -59,12 +59,14 @@ const Weather = () => {
                     src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}
                     alt={item.weather[0].description}
                   />
+                  
                   <p className="card-temp">
                     {convertKelvinToCelsius(item.main.temp)
                       .toFixed(0)
                       .padStart(2, "0")}
                     °
                   </p>
+                  <p className="card-city">{weatherData.city.name}</p>
                   <p className="card-time">
                     {moment(item.dt_txt).format("dddd D MMMM")}
                     <br />
