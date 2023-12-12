@@ -56,9 +56,9 @@ const Polucion = () => {
                             borderColor: '#3D8EF8',
                             borderWidth: 2,
                             pointRadius: 5,
-                            pointBackgroundColor: 'transparent',
                             pointBorderColor: 'transparent',
-                            pointHoverBackgroundColor: '#11C46E',
+                            pointBackgroundColor:'#3D8EF8',
+                            pointHoverBackgroundColor: '#3D8EF8',
                             fill: true,
                             backgroundColor: 'rgba(61, 142, 248, 0.2)',
                         },
@@ -78,7 +78,7 @@ const Polucion = () => {
                             borderColor: '#11C46E',
                             borderWidth: 2,
                             pointRadius: 5,
-                            pointBackgroundColor: 'transparent',
+                            pointBackgroundColor: '#11C46E',
                             pointBorderColor: 'transparent',
                             pointHoverBackgroundColor: '#11C46E',
                             fill: true,
@@ -101,13 +101,15 @@ const Polucion = () => {
                             beginAtZero: true,
                         },
                     },
-                    backgroundColor: '#11C46E'
+                    
                 },
             });
         }
     }, [beijingData, oviedoData]);
 
-    return <canvas ref={chartRef} width={500} height={500} />;
+    return <canvas className='graficaLineas' ref={chartRef} width={500} height={500}/>;
+    
 };
+
 
 export default Polucion;
