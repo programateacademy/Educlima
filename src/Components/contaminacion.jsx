@@ -38,20 +38,17 @@ const Polucion = () => {
                 type: 'line',
                 
                 data: {
-                    labels: ['CO', 'NO', 'NO2', 'O3', 'SO2', 'PM2.5', 'PM10', 'NH3', 'DT'],
+                    labels: ['SO2', 'NO2', 'PM10', 'PM2.5', 'O3', 'CO'],
                     datasets: [
                         {
                             label: 'Beijing',
                             data: [
-                                beijingData.list[0].components.co,
-                                beijingData.list[0].components.no,
-                                beijingData.list[0].components.no2,
-                                beijingData.list[0].components.o3,
                                 beijingData.list[0].components.so2,
-                                beijingData.list[0].components.pm2_5,
+                                beijingData.list[0].components.no2,
                                 beijingData.list[0].components.pm10,
-                                beijingData.list[0].components.nh3,
-                                beijingData.list[0].components.dt,
+                                beijingData.list[0].components.pm2_5,
+                                beijingData.list[0].components.o3,
+                                beijingData.list[0].components.co,
                             ],
                             borderColor: '#3D8EF8',
                             borderWidth: 2,
@@ -65,15 +62,12 @@ const Polucion = () => {
                         {
                             label: ' Oviedo',
                             data: [
-                                oviedoData.list[0].components.co,
-                                oviedoData.list[0].components.no,
-                                oviedoData.list[0].components.no2,
-                                oviedoData.list[0].components.o3,
                                 oviedoData.list[0].components.so2,
-                                oviedoData.list[0].components.pm2_5,
+                                oviedoData.list[0].components.no2,
                                 oviedoData.list[0].components.pm10,
-                                oviedoData.list[0].components.nh3,
-                                oviedoData.list[0].components.dt,
+                                oviedoData.list[0].components.pm2_5,
+                                oviedoData.list[0].components.o3,
+                                oviedoData.list[0].components.co,
                             ],
                             borderColor: '#11C46E',
                             borderWidth: 2,
@@ -89,25 +83,27 @@ const Polucion = () => {
                 },
                 options: {
                     responsive: false,
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'Comparación de la polucion del Aire: Beijing vs. Oviedo',
-                            color: 'white',
+                    
                         },
-                    },
+                    
                     scales: {
                         y: {
                             beginAtZero: true,
                         },
                     },
                     
-                },
+                
             });
         }
     }, [beijingData, oviedoData]);
 
-    return <canvas className='graficaLineas' ref={chartRef} width={500} height={500}/>;
+
+    return (
+        <div>
+            <h2>Comparación de la polución entre: Beijing y Oviedo</h2>
+            <canvas className='graficaLineas' ref={chartRef} width={500} height={500}/>;
+        </div>
+    );
     
 };
 
