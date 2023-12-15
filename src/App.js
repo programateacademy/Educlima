@@ -1,13 +1,13 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Weather from "./components/Weather";
-import Sidebar from "./components/Sidebar";
-import Historicos from "./components/Historicos";
-import Actuales from "./components/Actuales";
-import Polucion from "./components/Polucion";
+import Weather from "./Components/Weather";
+import Sidebar from "./Components/Sidebar";
+import Historicos from "./Components/Historicos";
+import Actuales from "./Components/Actuales";
+// import Polucion from "./Components/polucion";
 
-import "./components/Weather.css";
-import "./components/Sidebar.css";
+import "./Components/Weather.css";
+import "./Components/Sidebar.css";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Historicos />} />
           <Route path="/actuales" element={<Actuales />} />
           <Route path="/weather" element={<Weather />} />
-          <Route path="/polucion" element={<Polucion />} />
+          {/* <Route path="/polucion" element={<Polucion />} /> */}
         </Routes>
       </div>
     </Router>
