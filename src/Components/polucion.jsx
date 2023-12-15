@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import GraficoAnillo from './graficoTorta';
+import TablaPolucion from './tablaPolucion';
 import Chart from 'chart.js/auto';
 import '../index.css';
 
@@ -102,6 +104,8 @@ const Polucion = () => {
         <div>
             <h2>Comparación de la polución entre: Beijing y Oviedo</h2>
             <canvas className='graficaLineas' ref={chartRef} width={500} height={500}/>;
+            <TablaPolucion />
+            <GraficoAnillo/> 
         </div>
     );
     
