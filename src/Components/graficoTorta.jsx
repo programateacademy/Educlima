@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-const DonutChart = () => {
+const GraficoAnillo = () => {
     const chartContainer = useRef(null);
     const chartInstance = useRef(null);
 
@@ -55,4 +55,4 @@ const DonutChart = () => {
     );
 };
 
-export default DonutChart;
+export default GraficoAnillo;

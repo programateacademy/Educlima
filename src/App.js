@@ -1,7 +1,7 @@
 
 import './App.css';
 import Polucion from './Components/contaminacion';
-import DonutChart from './Components/graficoTorta';
+import GraficoAnillo from './Components/graficoTorta';
 import TablaPolucion from './Components/tablaPolucion';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Polucion />
       <TablaPolucion />
-      <DonutChart/> 
+      <GraficoAnillo/> 
     </div>
     
   );
