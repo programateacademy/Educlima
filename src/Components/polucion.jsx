@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import GraficoAnillo from './graficoTorta';
 import TablaPolucion from './tablaPolucion';
 import Chart from 'chart.js/auto';
+import './PolucionStyle.css';
 import '../index.css';
 
 const Polucion = () => {
@@ -101,11 +102,14 @@ const Polucion = () => {
 
 
     return (
-        <div>
+        <div className='containerPolucion'>
             <h2>Comparación de la polución entre: Beijing y Oviedo</h2>
-            <canvas className='graficaLineas' ref={chartRef} width={500} height={500}/>;
-            <TablaPolucion />
-            <GraficoAnillo/> 
+            <canvas className='graficaLineas' ref={chartRef} width={500} height={500}/>
+
+            <div><GraficoAnillo/> </div>
+
+            <div className='tablaPolucion'><TablaPolucion/></div>
+
         </div>
     );
     

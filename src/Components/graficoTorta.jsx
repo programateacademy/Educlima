@@ -36,7 +36,7 @@ const GraficoAnillo = () => {
             options: {
                 responsive: false,
                 maintainAspectRatio: false,
-                cutout: '70%',
+                cutout: '50%',
             }
         });
 
@@ -48,9 +48,9 @@ const GraficoAnillo = () => {
     }, []);
 
     return (
-        <div>
+        <div className="graficoAnillo" >
             <h2>Puntaje de polución</h2>
-            <canvas className="graficoAnillo" ref={chartContainer} width="250px" height="250px"></canvas>
+            <canvas ref={chartContainer} /* width="50%" height="auto" */></canvas>
         </div>
     );
 };

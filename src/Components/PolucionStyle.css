@@ -1,0 +1,12 @@
+.containerPolucion{
+    display: flex;
+    flex-wrap: wrap;
+}
+canvas .graficoAnillo{
+    width: 50%;
+    height:auto ;
+
+}
+.graficaLineas{
+    margin-left: 10px;
+}

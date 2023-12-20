@@ -1,4 +1,4 @@
-const Actuales = () => {
+/* const Actuales = () => {
   return (
     <div>
       <h2>Componente Actuales de Melany</h2>
@@ -7,3 +7,4 @@ const Actuales = () => {
 };
 
 export default Actuales;
+ */

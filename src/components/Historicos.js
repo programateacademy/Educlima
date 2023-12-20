@@ -1,4 +1,4 @@
-
+/* 
 const Historicos = () => {
     return (
         <div>
@@ -9,4 +9,4 @@ const Historicos = () => {
     )
 }
 
-export default Historicos
+export default Historicos */

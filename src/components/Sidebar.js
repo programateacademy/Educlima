@@ -12,7 +12,7 @@ const Sidebar = () => {
       <div className="logo">LOGO</div>
       <span className="menu">MENU</span>
       <ul>
-        <li>
+        {/* <li>
           <Link className="active" to="/">
             <FaRegClock />
             <span>Historicos</span>
@@ -24,10 +24,10 @@ const Sidebar = () => {
             <FaRegCheckSquare />
             <span>Actuales</span>
           </Link>
-        </li>
+        </li> */}
 
         <li>
-          <Link className="active" to="/weather">
+          <Link className="active" to="/">
             <FaCloudSun />
             <span>Pronósticos</span>
           </Link>
