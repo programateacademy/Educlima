@@ -1,15 +1,18 @@
 import {
-  FaRegClock,
-  FaRegCheckSquare,
+  // FaRegClock,
+  // FaRegCheckSquare,
   FaCloudSun,
   FaSmog,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "../img/logo.png";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="logo">LOGO</div>
+      <div className="logo-container" >
+        <img className="logo" src={logo} alt="logo" />
+      </div>
       <span className="menu">MENU</span>
       <ul>
         {/* <li>
