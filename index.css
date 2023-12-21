@@ -1,0 +1,56 @@
+/* index.css */
+
+body {
+  background-color: #1F282E;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  background-color: #1F282E;
+  padding: 10px;
+  width: 10px; /* Ajusta el ancho según tus necesidades */
+  height: auto;
+  
+}
+
+h2 {
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+.chart-container {
+  max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
+  background-color: #27333A;
+  padding: 50px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  width: 200px; /* Ajusta el tamaño según tus preferencias */
+  height: 200px;
+}
+
+.chart {
+  width: 5px; /* Ajusta el tamaño según tus preferencias */
+  height: 5px;
+}
+
+.center-vertically {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature-info-box {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #27333A;
+}
