@@ -1,0 +1,61 @@
+/* index.css */
+
+.actuales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+}
+.actuales h2 {
+    width: 100%;
+    text-align: center;
+}
+.actuales p {
+    text-align: center;
+}
+  
+  /* .container {
+    position: relative;
+    background-color: #1F282E;
+    padding: 10px;
+    width: 10px; 
+    height: auto;
+    
+  }
+  
+  h2 {
+    text-align: center;
+    padding: 50px;
+    color: white;
+  }
+  
+  .chart-container {
+    max-width: 800px; 
+    margin: 0 auto;
+    background-color: #27333A;
+    padding: 50px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    width: 200px; 
+    height: 200px;
+  }
+  
+  .chart {
+    width: 5px; 
+    height: 5px;
+  }
+  
+  .center-vertically {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .temperature-info-box {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #27333A;
+  } */

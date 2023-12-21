@@ -1,0 +1,8 @@
+.App {
+  display: flex;
+  height: 100%;
+}
+
+body {
+  background-color: #1f282e;
+}

@@ -1,0 +1,29 @@
+
+.tablaPolucion {
+    margin:10px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.tablaPolucion table {
+    border: transparent;
+    background-color: #27333A ;
+    color: rgba(255, 255, 255, 0.445);
+    border-radius: 10px;
+}
+
+.tablaPolucion th,.tablaPolucion td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+    
+}
+
+
+.tablaPolucion tr:hover {
+    background-color: #36434b  ;
+}
+
+.tablaPolucion h2 {
+    text-align: center;
+}
