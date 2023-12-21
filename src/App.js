@@ -1,6 +1,7 @@
 import './App.css';
 import Historico from "./Historico";
 
+
 function App() {
   return (
 
@@ -8,7 +9,7 @@ function App() {
       <div className="App">
         
         <Routes>
-          <Route path="/" element={<Historicos />} />
+          <Route path="/" element={<Historico/>} />
         </Routes>
       </div>
 
