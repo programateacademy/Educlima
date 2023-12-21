@@ -1,5 +1,8 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Historico from './Historico';
 import './App.css';
-import Historico from "./Historico";
+
 
 
 function App() {
@@ -19,8 +22,5 @@ function App() {
 }
 
 export default App;
-
-
-
 
 
