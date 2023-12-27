@@ -8,7 +8,7 @@ import '../index.css';
 const Polucion = () => {
     const [beijingData, setBeijingData] = useState(null);
     const [oviedoData, setOviedoData] = useState(null);
-    const apiKey = 'f0e1fcd262705a1036cbc830d06fd67f';
+    const apiKey = '1bc995b7d7e3243207e2936f95489782';
     const chartRef = useRef();
 
     useEffect(() => {
