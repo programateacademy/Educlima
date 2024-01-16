@@ -1,14 +1,26 @@
 .containerPolucion{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 80%;
     align-items: center;
+    justify-content: center;
 }
 canvas .graficoAnillo{
     width: 50%;
     height:auto ;
 
 }
-.graficaLineas{
-    margin-left: 10px;
+
+canvas.graficaLineas{
+    display: flex;
+    justify-content: center;
+}
+
+div.graficoAnillo{
+    margin-left: 40px;
+}
+nav.title{
+    display: flex;
+    justify-content: center;
+
 }

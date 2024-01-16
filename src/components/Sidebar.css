@@ -66,4 +66,61 @@
     font-size: 14px;
 
   }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
   
+    .logo-container,
+    .footer-container {
+      display: none; 
+    }
+  
+    .menu {
+      margin-left: 16px;
+    }
+  
+    ul {
+      padding-left: 0;
+    }
+  
+    li {
+      padding: 10px 16px;
+    }
+  
+    .footer-container span {
+      text-align: center;
+    }
+  
+    /* Botón de hamburguesa */
+    .hamburger-btn {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      text-align: left;
+    }
+  
+    .hamburger-icon {
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
+    .hamburger-btn.active .hamburger-icon:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .hamburger-btn.active .hamburger-icon:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger-btn.active .hamburger-icon:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }

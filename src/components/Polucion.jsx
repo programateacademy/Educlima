@@ -102,14 +102,15 @@ const Polucion = () => {
 
 
     return (
-        <div className='containerPolucion'>
-            <h2>Comparación de la polución entre: Beijing y Oviedo</h2>
-            <canvas className='graficaLineas' ref={chartRef} width={500} height={500}/>
+        <div className='container'>
+            <nav className='title'><h2>Tabla de comparación entre: Oviedo y Beijin</h2></nav>
+            <div className='containerPolucion'>
+                <canvas className='graficaLineas'  ref={chartRef} width={500} height={500}/>
 
-            <div><GraficoAnillo/> </div>
+                <div><GraficoAnillo/> </div>
 
-            <div className='tablaPolucion'><TablaPolucion/></div>
-
+                <div className='tablaPolucion'><TablaPolucion/></div>
+            </div>
         </div>
     );
     
